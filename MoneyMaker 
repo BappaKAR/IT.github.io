@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Me</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-bottom: 1px solid #dbdbdb;
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar-brand {
+            font-family: 'Billabong', cursive;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .navbar-icons {
+            display: flex;
+            gap: 20px;
+        }
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+        .story-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px 0;
+        }
+        .story {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            padding: 2px;
+        }
+        .story-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .post {
+            border: 1px solid #dbdbdb;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 3px;
+        }
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .post-user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .post-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #dbdbdb;
+        }
+        .post-image {
+            width: 100%;
+            height: 400px;
+            background: #eee;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .post-actions-left {
+            display: flex;
+            gap: 15px;
+        }
+        .post-likes {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        .post-caption {
+            padding: 5px 10px;
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background: white;
+            border-top: 1px solid #dbdbdb;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Follow Me</div>
+        <div class="navbar-icons">
+            <div>+</div>
+            <div>♥</div>
+            <div>✉</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="story-container">
+            <div class="story">
+                <div class="story-inner"></div>
+            </div>
+            <div class="story">
+                <div class="story-inner"></div>
+            </div>
+            <div class="story">
+                <div class="story-inner"></div>
+            </div>
+            <div class="story">
+                <div class="story-inner"></div>
+            </div>
+            <div class="story">
+                <div class="story-inner"></div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <div class="post-user">
+                    <div class="post-avatar"></div>
+                    <div>username</div>
+                </div>
+                <div>...</div>
+            </div>
+            <div class="post-image"></div>
+            <div class="post-actions">
+                <div class="post-actions-left">
+                    <div>♥</div>
+                    <div>💬</div>
+                    <div>✉</div>
+                </div>
+                <div>🔖</div>
+            </div>
+            <div class="post-likes">1,234 likes</div>
+            <div class="post-caption">
+                <strong>username</strong> This is a sample caption for the post.
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div>🏠</div>
+        <div>🔍</div>
+        <div>➕</div>
+        <div>♡</div>
+        <div>👤</div>
+    </div>
+</body>
+</html>
